@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmanMeals.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1475px)" href="phone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Edu+SA+Beginner&family=Heebo&family=Montserrat:wght@100&family=Mulish:wght@200&family=Ubuntu&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="tlogo.png" alt="AmanMeals">
+        </div>
+        <ul>
+            <li class="items"><a href="#home">Home</a></li>
+            <li class="items"><a href="#places">Popular Cities</a></li>
+            <li class="items"><a href="#service-container">Services</a></li>
+            <li class="items"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <div class="search">
+            <input type="text" name="search" placeholder="Find your food here....">
+        </div>
+        <h1 class="prim">Welcome! Order Your Best Meal</h1>
+        <p>Our food ordering website offers convenient and seamless dinning experience,allowing you to browse a diverse
+            menu,customize your orders,and have delicious meals delivered to your doorstep with just a few clicks.
+        </p>
+        <button class="btn">Order Now</button>
+    </section>
+    <section id="service-container">
+        <h1 class="h1-pri2">Our Services</h1>
+        <div id="service">
+            <div class="box">
+                <img src="tpizza.webp" alt="">
+                <h2 class="h2-sec1">Bulk Ordering</h2>
+                <p>Buying in bulk often results in lower unit costs. Suppliers may offer discounts or reduced prices to
+                    customers who purchase larger quantities.</p>
+            </div>
+            <div class="box">
+                <img src="timgburger.webp" alt="">
+                <h2 class="h2-sec1">Food Catering</h2>
+                <p>Catering services can range from small, informal gatherings to large, formal events, and we can
+                    offer a wide variety of cuisines .</p>
+            </div>
+            <div class="box">
+                <img src="tfd.png" alt="">
+                <h2 class="h2-sec1">Food Ordering</h2>
+                <p>We understand your time is precious. Enjoy prompt delivery or efficient takeaway service, so you can
+                    savor your meal without delay.</p>
+            </div>
+        </div>
+    </section>
+    <section id="places">
+        <h1 class="h1-pri1">Fast Delivery In Popular Cities</h1>
+        <div id="city">
+            <div class="cities">
+                <img src="tpc1.webp" alt="">
+                <h2 class="h2-sec">Delhi</h2>
+            </div>
+            <div class="cities">
+                <img src="tpc2.webp" alt="">
+                <h2 class="h2-sec">Mumbai</h2>
+            </div>
+            <div class="cities">
+                <img src="tpc3.webp" alt="">
+                <h2 class="h2-sec">Kolkata</h2>
+            </div>
+            <div class="cities">
+                <img src="tpc4.webp" alt="">
+                <h2 class="h2-sec">Bengaluru</h2>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h1-pri1">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone No.: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone no.">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="Write your reviews"></textarea>
+                </div>
+                <div id="sub">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.AmanMeals.com. All Rights Reserved
+        </div>
+    </footer>
+</body>
+</html>
