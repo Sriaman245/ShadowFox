@@ -1,0 +1,287 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(24, 23, 23);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#logo {
+    margin: 10px;
+}
+
+#logo img {
+    height: 50px;
+    margin: 3px 6px;
+    border-radius: 50px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: rgb(255, 252, 252);
+    padding: 3px 20px;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: rgb(197, 191, 191);
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 575px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('tfood-6056720_1280.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* opacity:0.6; */
+}
+
+.search {
+    padding: 40px 20px;
+
+}
+
+.search input {
+    width: 700px;
+    height: 50px;
+    padding: 0px 20px;
+    border: 2px solid rgb(15, 15, 15);
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+}
+
+#home h1 {
+    color: rgb(253, 250, 250);
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.3rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#home p {
+    font-size: 1.3rem;
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(116, 3, 3);
+    color: white;
+    border-radius: 50px;
+    margin: 17px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: white;
+    color: brown;
+}
+
+/* Service section */
+#service-container {
+    margin: 110px 0px;
+    margin-bottom: 0px;
+}
+
+#service {
+    display: flex;
+    margin: 34px;
+
+}
+
+#service .box {
+    border: 2px solid red;
+    text-align: center;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background-color: rgb(228, 226, 226);
+}
+
+#service .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+    /* without this img will not get center */
+}
+
+/* Places section */
+#places {
+    position: relative;
+}
+
+#places::before {
+    content: "";
+    background: url('t6.avif') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#city {
+    display: flex;
+}
+
+#city .cities {
+    /* border:2px solid black; */
+    padding: 10px;
+    margin: 40px 40px;
+    border: 2px solid white;
+
+    /* border-radius:28px; */
+}
+
+#city .cities img {
+    box-shadow: 0px 0px 70px 6px rgb(9, 9, 9);
+    height: 185px;
+    margin: auto;
+    display: block;
+
+}
+
+/* Contact-Box */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    background: url('tcontact.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    background-color: aliceblue;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    /* background-color: rgb(245, 248, 250); */
+    /* border-radius: 40px; */
+}
+
+#contact-box #sub {
+    width: 100px;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Utility Classes */
+#home .prim {
+    font-size: 2.8rem;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.h1-pri2 {
+    font-size: 2.6rem;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.h1-pri1 {
+    color: white;
+    font-size: 2.6rem;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.h2-sec {
+    color: white;
+    font-size: 1.6rem;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(41, 40, 40);
+}
+
+.h2-sec1 {
+    font-size: 1.6rem;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
